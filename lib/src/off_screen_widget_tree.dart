@@ -11,12 +11,12 @@ class OffscreenWidgetTree {
   final BuildOwner buildOwner;
   final PipelineOwner pipelineOwner;
   late RenderObjectToWidgetElement<RenderBox> _root;
-  OffscreenWidgetTree({this.renderView,FocusManager? focusManager})
+  OffscreenWidgetTree({this.renderView, FocusManager? focusManager})
       : buildOwner = BuildOwner(focusManager: focusManager),
         pipelineOwner = PipelineOwner() {
     pipelineOwner.rootNode = renderView;
 
-   // renderView.attach(pipelineOwner);
+    // renderView.attach(pipelineOwner);
     renderView!.prepareInitialFrame();
   }
 
@@ -28,7 +28,7 @@ class OffscreenWidgetTree {
         textDirection: TextDirection.ltr,
         child: child,
       ),
-     // debugShortDescription: '[root]',
+      // debugShortDescription: '[root]',
     ).attachToRenderTree(this.buildOwner);
   }
 

@@ -2,7 +2,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:widget_to_image/widget_to_image.dart';
+import 'package:flutter_widget_to_image/flutter_widget_to_image.dart';
 
 void main() {
   runApp(MyApp());

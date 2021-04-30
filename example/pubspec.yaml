@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  widget_to_image:
+  flutter_widget_to_image:
     path: ../
 
 dev_dependencies:
